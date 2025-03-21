@@ -1,85 +1,39 @@
-body {
-  font-family: "Arial", sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-}
-.hero {
-  color: white;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-
+.carousel-inner img {
+  height: 500px; /* Adjust height as needed */
+  object-fit: cover; /* Ensures the image covers the entire container */
 }
 
-.hero h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  text-transform: uppercase;
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  font-weight: 500;
+.gallery img:hover {
+  transform: scale(1.05);
 }
-
-.footer {
-  background-color: #222;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
+.card-body {
+  padding: 10px;
 }
-
-.nav-search {
-  margin-top: 12px;
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
 }
-
-.hero-section {
-  background: url("../img/hero-banner.jpg") center/cover;
-}
-
-.highlight-sections {
-  background-color: #f4f7fc;
-}
-
-.section-header {
-  font-size: 2.75rem;
-  font-weight: 700;
-  color: #343a40;
-}
-
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #333;
-}
-
-.text-muted {
+.card-text {
+  font-size: 14px;
   color: #6c757d;
 }
 
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.download-btn {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
 }
-
-.shadow-sm {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-@media (max-width: 767px) {
-  .section-header {
-    font-size: 2.25rem;
-  }
-
-  .section-title {
-    font-size: 1.75rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .nav-search {
-    margin-top: 0px;
-  }
+.download-btn:hover {
+  background-color: #0056b3;
 }

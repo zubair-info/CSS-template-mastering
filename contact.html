@@ -18,6 +18,144 @@
     <title>Liberation War Archive</title>
   </head>
   <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" style="width: 90px;height: 48px;" href="index.html"><img src="img/logo.png"
+            class="img-fluid" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="documents.html">Documents</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="interviews.html">Interviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="photographs.html">Photographs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card card-body">
+              <address>
+                <b>Address no: </b> PencilBox Training Institute 5th Floor, EDB
+                Trade Centre, 93 Kazi Nazrul Islam Ave, Dhaka 1215 <br />
+                <b>Phone no: </b> 01850504451 <br />
+                <b>Email no: </b> zubair1050uap@gmail.com<br />
+              </address>
+            </div>
+            <div class="card card-body">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.7951569475763!2d90.38907877516377!3d23.754683078667487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8bd549fb345%3A0x7742bff894bdacaf!2sPencilBox%20Training%20Institute!5e0!3m2!1sen!2sbd!4v1741324392562!5m2!1sen!2sbd"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card card-body">
+              <!-- <form action="" method="post" id="sendMessageFrom" onsubmit="alert('Form submited Successfully')"> -->
+              <form
+                action=""
+                method="post"
+                id="sendMessageFrom"
+                onsubmit="return sendMessageFrom()"
+              >
+                <div class="row mb-3">
+                  <label class="col-md-3" for="fullname">Fullname:</label>
+                  <div class="col-md-9">
+                    <input
+                      type="text"
+                      class="form-control"
+                      name="fullname"
+                      id="fullname"
+                    />
+                    <span id="fullnameError" class="error text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-md-3" for="email">Email:</label>
+                  <div class="col-md-9">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                    />
+                    <span id="emailError" class="error text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-md-3" for="Message">Message:</label>
+                  <div class="col-md-9">
+                    <textarea
+                      name="Message"
+                      id="Message"
+                      class="w-100"
+                      rows="10"
+                    ></textarea>
+                    <span id="messageError" class="error text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label class="col-md-3" for="Phone">Phone:</label>
+                  <div class="col-md-9">
+                    <input
+                      type="file"
+                      class="form-control"
+                      name="Phone"
+                      id="Phone"
+                    />
+                    <span id="phoneError" class="error text-danger"></span>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-9 offset-md-3">
+                    <input
+                      type="submit"
+                      class="form-control btn btn-success"
+                      value="Submit"
+                    />
+                  </div>
+                </div>
+
+                <!-- Success/Error Message Section -->
+                <div id="formResponseMessage" class="text-center mt-3"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   
     <footer class="footer">
       <p class="mb-0">
